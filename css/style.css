@@ -701,6 +701,11 @@ ul { list-style: none; }
 
 .project-card:hover::before { opacity: 1; }
 
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
+
 .project-header {
   display: flex;
   align-items: flex-start;
