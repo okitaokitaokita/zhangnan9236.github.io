@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome (fixed: removed broken integrity hash) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -77,6 +77,7 @@
       </div>
 
       <div class="about-grid">
+        <!-- Introduction -->
         <div class="about-text reveal">
           <p>
             I am a Data Science master's student at <strong>Lingnan University (Hong Kong)</strong>,
@@ -114,6 +115,7 @@
           </div>
         </div>
 
+        <!-- Education Timeline -->
         <div class="education reveal delay-1">
           <h3 class="sub-title"><i class="fas fa-graduation-cap"></i> Education</h3>
           <div class="timeline">
@@ -168,6 +170,7 @@
       </div>
 
       <div class="skills-grid">
+        <!-- Technical Skills -->
         <div class="skill-category reveal">
           <div class="skill-cat-header">
             <i class="fas fa-code"></i>
@@ -205,6 +208,7 @@
           </div>
         </div>
 
+        <!-- Business Skills -->
         <div class="skill-category reveal delay-1">
           <div class="skill-cat-header">
             <i class="fas fa-briefcase"></i>
@@ -253,61 +257,87 @@
             <div class="project-icon"><i class="fas fa-city"></i></div>
             <div class="project-meta">
               <span class="project-period"><i class="fas fa-calendar-alt"></i> Jan 2026 – May 2026</span>
-              <span class="project-type"><i class="fas fa-users"></i> Group Project (MSc Course)</span>
+              <span class="project-type"><i class="fas fa-users"></i> Group Project (MSc Course Project)</span>
             </div>
           </div>
           <h3 class="project-title">Smart City Surveillance Video Analysis System</h3>
           <p class="project-brief">
-            Intelligent monitoring system to analyze urban surveillance videos — detecting abnormal events
-            and providing traffic statistics to improve city safety and efficiency.
+            Intelligent monitoring system that analyzes urban surveillance videos to detect abnormal
+            events (e.g., sudden crowd running, traffic congestion, unauthorized intrusion) and deliver
+            quantitative traffic statistics to improve city safety and management efficiency.
           </p>
 
           <div class="project-details">
             <div class="detail-block">
-              <h4><i class="fas fa-exclamation-circle"></i> Problem</h4>
+              <h4><i class="fas fa-search"></i> Problem</h4>
               <p>
-                Urban surveillance systems generate massive amounts of video data that are difficult to monitor manually in real-time.
-                City safety departments need an automated intelligent monitoring system that can detect abnormal events
-                (e.g., sudden crowd running, traffic congestion, unauthorized area intrusion) and provide quantitative traffic statistics.
+                Urban surveillance systems generate massive amounts of video data that are difficult to
+                monitor manually in real-time. City safety departments need an automated intelligent
+                monitoring system that can detect abnormal events and provide quantitative traffic
+                statistics. This project aims to improve urban safety and traffic management efficiency
+                by replacing manual monitoring with AI-driven analytics.
               </p>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-database"></i> Data</h4>
               <p>
-                VIRAT public dataset — a large-scale outdoor surveillance video benchmark containing multiple scenes
-                (parking lots, intersections, public areas) with frame-level annotations for 12+ activity types
-                including pedestrian walking, vehicle turning, and group interactions.
+                <strong>VIRAT public dataset</strong> — a large-scale outdoor surveillance video
+                benchmark containing multiple scenes (parking lots, intersections, public areas) with
+                frame-level annotations for 12+ activity types including pedestrian walking, vehicle
+                turning, and group interactions. Total dataset includes hundreds of video clips at
+                various resolutions and lighting conditions.
               </p>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-cogs"></i> Approach</h4>
               <p>
-                Designed a multi-stage video analytics pipeline: (1) Adaptive background subtraction using GMM;
-                (2) Optical flow algorithms (TV-L1, CLG) for dense motion estimation;
-                (3) YOLOv5 for real-time object detection and tracking;
-                (4) Rule-based event detection logic combining motion magnitude, object density, and trajectory analysis;
-                (5) Visualization dashboard with hourly traffic flow curves and group size distribution histograms.
+                Designed a multi-stage video analytics pipeline: (1) Implemented adaptive background
+                subtraction using multi-period <strong>Gaussian Mixture Models (GMM)</strong> to handle
+                varying illumination and low-light conditions; (2) Applied optical flow algorithms
+                (<strong>TV-L1 and CLG</strong>) for dense motion estimation to detect movement patterns;
+                (3) Integrated <strong>YOLOv5</strong> for real-time object detection and tracking of
+                pedestrians and vehicles; (4) Developed rule-based event detection logic combining motion
+                magnitude, object density, and trajectory analysis for anomaly recognition; (5) Built a
+                visualization dashboard generating hourly traffic flow curves and group size distribution
+                histograms.
               </p>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-trophy"></i> Outcome / Impact</h4>
               <p>
-                Achieved <strong>mAP@0.5 &gt; 0.85</strong>; reduced false positive rate by <strong>30%</strong> through multi-model fusion;
-                system processes video at <strong>~15 FPS</strong> on GPU.
+                Achieved object detection accuracy of <strong>mAP@0.5 &gt; 0.85</strong> on the VIRAT
+                test set; reduced false positive rate by <strong>30%</strong> compared to single-model
+                baseline through multi-model fusion. Generated interpretable hourly traffic flow curves
+                and group size histograms validated by simulated city planner feedback as useful
+                decision-support tools. The system processes video at near real-time speed
+                (<strong>~15 FPS on GPU</strong>).
               </p>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-user-check"></i> My Contribution</h4>
               <p>
-                Led video preprocessing and background modeling; implemented GMM background subtraction;
-                developed optical flow motion analysis; created traffic statistics visualizations; conducted pipeline validation.
+                Led the video preprocessing and background modeling module; implemented the adaptive GMM
+                background subtraction algorithm; developed the optical flow-based motion analysis
+                component; created all traffic statistics visualizations (matplotlib/seaborn); conducted
+                systematic evaluation and validation of the event detection pipeline against
+                ground-truth annotations.
               </p>
+            </div>
+            <div class="detail-block detail-links">
+              <h4><i class="fas fa-link"></i> Links</h4>
+              <div class="project-link-buttons">
+                <!-- TODO: Replace "#" with your GitHub repo URL -->
+                <a href="#" class="project-link-btn"><i class="fab fa-github"></i> GitHub Repo</a>
+                <!-- TODO: Replace "#" with your project report link (e.g. Google Drive) -->
+                <a href="#" class="project-link-btn"><i class="fas fa-file-alt"></i> Project Report</a>
+              </div>
             </div>
           </div>
 
           <div class="project-tags">
             <span>Python</span><span>YOLOv5</span><span>OpenCV</span>
-            <span>Optical Flow</span><span>Computer Vision</span><span>GMM</span><span>Anomaly Detection</span>
+            <span>Optical Flow</span><span>Computer Vision</span><span>GMM</span>
+            <span>Anomaly Detection</span>
           </div>
 
           <button class="btn-expand" aria-expanded="false">
@@ -322,62 +352,87 @@
             <div class="project-icon"><i class="fas fa-chart-line"></i></div>
             <div class="project-meta">
               <span class="project-period"><i class="fas fa-calendar-alt"></i> Dec 2022 – Jun 2023</span>
-              <span class="project-type"><i class="fas fa-user"></i> Individual (BSc Thesis)</span>
+              <span class="project-type"><i class="fas fa-user"></i> Individual Project (BSc Undergraduate Thesis)</span>
             </div>
           </div>
           <h3 class="project-title">Stock Price Prediction using LSTM</h3>
           <p class="project-brief">
-            Deep learning model to predict future stock prices from historical data, addressing
-            non-linear temporal relationships in financial time series to support data-driven investment decisions.
+            End-to-end deep learning pipeline that uses LSTM networks to forecast short-term stock
+            prices from historical price data and engineered technical indicators, outperforming
+            traditional ARIMA and linear regression baselines on Chinese A-share market data.
           </p>
 
           <div class="project-details">
             <div class="detail-block">
-              <h4><i class="fas fa-exclamation-circle"></i> Problem</h4>
+              <h4><i class="fas fa-search"></i> Problem</h4>
               <p>
-                Financial markets exhibit complex non-linear temporal dynamics that traditional statistical models (e.g., ARIMA) struggle to capture.
-                This thesis investigated whether LSTM networks can outperform traditional time series models for stock price prediction.
+                Financial markets exhibit complex non-linear temporal dynamics that traditional
+                statistical models (e.g., ARIMA) struggle to capture. Investors and quantitative
+                analysts need more accurate short-term stock price forecasting tools to support
+                data-driven investment decisions. This thesis investigated whether deep learning
+                approaches, specifically LSTM networks, can outperform traditional time series models
+                for stock price prediction.
               </p>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-database"></i> Data</h4>
               <p>
-                Historical daily stock price data from Yahoo Finance API, covering 5+ years (2017–2022) for Chinese A-share stocks.
-                Features: open, high, low, close, volume (~1,200+ records per stock) plus engineered indicators (MA5, MA20, RSI, MACD).
+                Historical daily stock price data from <strong>Yahoo Finance API</strong>, covering
+                5+ years (2017–2022) for selected stocks on the Chinese A-share market. Features
+                include open, high, low, close prices, and trading volume — totaling approximately
+                <strong>1,200+ trading day records</strong> per stock. Additional technical indicators
+                (MA5, MA20, RSI, MACD) were engineered as supplementary features.
               </p>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-cogs"></i> Approach</h4>
               <p>
-                End-to-end pipeline: (1) Data collection and cleaning (yfinance, pandas);
-                (2) Feature engineering (moving averages, RSI, MACD);
-                (3) Min-Max normalization + 60-day sliding window;
-                (4) Multi-layer LSTM architecture (2 LSTM layers + dropout + dense) in PyTorch;
-                (5) Grid search hyperparameter tuning;
-                (6) Evaluation with RMSE, MAE, directional accuracy;
-                (7) Comparison against ARIMA and linear regression baselines.
+                Built an end-to-end deep learning pipeline: (1) Collected and cleaned raw price data
+                using Python (yfinance, pandas); (2) Engineered technical indicator features (moving
+                averages, RSI, MACD); (3) Applied <strong>Min-Max normalization</strong> and sliding
+                window technique (window size = 60 days); (4) Designed a multi-layer
+                <strong>LSTM architecture</strong> (2 LSTM layers + dropout + dense output) using
+                PyTorch; (5) Performed grid search hyperparameter tuning on learning rate, hidden
+                units, and dropout rate; (6) Evaluated with RMSE, MAE, and directional accuracy
+                metrics; (7) Compared performance against ARIMA and simple linear regression baselines.
               </p>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-trophy"></i> Outcome / Impact</h4>
               <p>
-                <strong>RMSE 40% lower than ARIMA</strong>, <strong>55% lower than linear regression</strong>;
-                directional accuracy <strong>62%</strong> (vs 50% random baseline);
-                stable results via 5-fold time-series cross-validation.
+                The LSTM model achieved <strong>RMSE 40% lower than ARIMA</strong> and
+                <strong>55% lower than linear regression</strong> on the test set; directional
+                prediction accuracy reached <strong>62%</strong>, providing a meaningful edge over
+                the random baseline (50%). Model demonstrated stability through 5-fold time-series
+                cross-validation with consistent performance across different market conditions.
+                Results were documented in the undergraduate thesis and received an
+                <strong>excellent grade</strong>.
               </p>
             </div>
             <div class="detail-block">
               <h4><i class="fas fa-user-check"></i> My Contribution</h4>
               <p>
-                Independently completed the entire pipeline — literature review, data collection, feature engineering,
-                model design, training, evaluation, visualization, and thesis writing.
+                Independently completed the entire project pipeline from problem formulation through
+                final presentation — including literature review, data collection and cleaning,
+                feature engineering, model architecture design, training and hyperparameter
+                optimization, comprehensive evaluation, results visualization, and thesis writing.
               </p>
+            </div>
+            <div class="detail-block detail-links">
+              <h4><i class="fas fa-link"></i> Links</h4>
+              <div class="project-link-buttons">
+                <!-- TODO: Replace "#" with your GitHub repo URL -->
+                <a href="#" class="project-link-btn"><i class="fab fa-github"></i> GitHub Repo</a>
+                <!-- TODO: Replace "#" with your thesis PDF link (e.g. Google Drive) -->
+                <a href="#" class="project-link-btn"><i class="fas fa-file-pdf"></i> Thesis PDF</a>
+              </div>
             </div>
           </div>
 
           <div class="project-tags">
             <span>Python</span><span>PyTorch</span><span>LSTM</span>
-            <span>Time Series</span><span>Financial Data</span><span>Feature Engineering</span><span>Yahoo Finance</span>
+            <span>Time Series</span><span>Financial Data</span>
+            <span>Feature Engineering</span><span>Yahoo Finance</span>
           </div>
 
           <button class="btn-expand" aria-expanded="false">
@@ -404,16 +459,10 @@
             <h3>Nan Zhang – Resume</h3>
             <p>Data Science &amp; Quantitative Research | MSc Student @ Lingnan University</p>
           </div>
-          <a href="#" class="btn btn-primary" id="resume-download">
+          <a href="https://drive.google.com/file/d/1bWZ_hhwfIsQ1yTIgXRFk3ch5uU9FSMy7/view?usp=sharing" class="btn btn-primary" id="resume-download">
             <i class="fas fa-download"></i> Download PDF
           </a>
         </div>
-        <p class="resume-note">
-          <i class="fas fa-info-circle"></i>
-          To update the resume link, upload your PDF to Google Drive, set sharing to "Anyone with the link",
-          and replace the <code>#</code> in <code>index.html</code> (line with <code>id="resume-download"</code>)
-          with the direct link.
-        </p>
       </div>
     </div>
   </section>
@@ -431,6 +480,7 @@
       </div>
 
       <div class="contact-grid">
+        <!-- Contact Info -->
         <div class="contact-info reveal">
           <div class="contact-item">
             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
@@ -459,11 +509,12 @@
             <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
             <div>
               <h4>LinkedIn</h4>
-              <a href="#" id="linkedin-link">Add LinkedIn URL</a>
+              <a href="https://www.linkedin.com/in/zhangnan9236/" id="linkedin-link">linkedin.com/in/zhangnan9236</a>
             </div>
           </div>
         </div>
 
+        <!-- Contact Form -->
         <div class="contact-form-wrapper reveal delay-1">
           <form class="contact-form" id="contact-form" action="mailto:zhangnan9236@gmail.com" method="post" enctype="text/plain">
             <div class="form-group">
@@ -499,7 +550,7 @@
         <a href="https://github.com/okitaokitaokita" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/zhangnan9236/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:zhangnan9236@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
