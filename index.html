@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nan Zhang | Data Science Portfolio</title>
+  <meta name="description" content="Nan Zhang – Data Science graduate student seeking internship or full-time position in Data Science / Quantitative Research." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">NZ<span class="dot">.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume"   class="nav-link">Resume</a></li>
+        <li><a href="#contact"  class="nav-link contact-btn">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="container hero-content">
+      <p class="hero-greeting fade-in">Hello, I'm</p>
+      <h1 class="hero-name fade-in delay-1">Nan Zhang <span class="name-cn">张楠</span></h1>
+      <p class="hero-tagline fade-in delay-2">
+        Data Science graduate student seeking an internship or full-time position in
+        <span class="highlight">Data Science</span> /
+        <span class="highlight">Quantitative Research</span>,
+        with expertise in Machine Learning, Computer Vision, and Time Series Analysis.
+      </p>
+      <div class="hero-badges fade-in delay-3">
+        <span class="badge">Data Science</span>
+        <span class="badge">Machine Learning</span>
+        <span class="badge">Python</span>
+        <span class="badge">SQL</span>
+        <span class="badge">Computer Vision</span>
+        <span class="badge">LSTM</span>
+        <span class="badge">Quantitative Research</span>
+      </div>
+      <div class="hero-cta fade-in delay-4">
+        <a href="#contact" class="btn btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
+        <a href="#projects" class="btn btn-outline">View Projects</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down-arrow" aria-label="Scroll to About">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Introduction -->
+        <div class="about-text reveal">
+          <p>
+            I am a Data Science master's student at <strong>Lingnan University (Hong Kong)</strong>,
+            expected to graduate in June 2026. I hold a Bachelor's degree in Financial Mathematics
+            from <strong>Southern University of Science and Technology (SUSTech)</strong>, a
+            double-first-class university in China.
+          </p>
+          <p>
+            I am passionate about using data and algorithms to solve real-world problems, from urban
+            surveillance analytics to stock market forecasting. My hands-on experience includes
+            computer vision projects, time series prediction, and a quantitative research internship.
+          </p>
+          <p>
+            I am a fast learner, strong in mathematics and programming, and I thrive in collaborative
+            environments. I am now seeking an internship or entry-level role in data science or
+            quantitative research where I can create measurable business impact.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>zhangnan9236@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Hong Kong / China</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>MSc Data Science (exp. Jun 2026)</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Open to Internship &amp; Full-time</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="education reveal delay-1">
+          <h3 class="sub-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">09/2025 – 06/2026 (Expected)</span>
+                <h4>MSc in Data Science</h4>
+                <p class="timeline-school">Lingnan University, Hong Kong</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">09/2019 – 06/2023</span>
+                <h4>BSc in Financial Mathematics</h4>
+                <p class="timeline-school">Southern University of Science and Technology (SUSTech)</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sub-title mt-lg"><i class="fas fa-star"></i> Focus Areas</h3>
+          <div class="focus-grid">
+            <div class="focus-card">
+              <i class="fas fa-brain"></i>
+              <span>Machine Learning &amp; Deep Learning</span>
+            </div>
+            <div class="focus-card">
+              <i class="fas fa-camera"></i>
+              <span>Computer Vision &amp; Video Analytics</span>
+            </div>
+            <div class="focus-card">
+              <i class="fas fa-chart-line"></i>
+              <span>Time Series Analysis &amp; Forecasting</span>
+            </div>
+            <div class="focus-card">
+              <i class="fas fa-calculator"></i>
+              <span>Statistical Modeling &amp; Quantitative Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Technical Skills</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Python (pandas, numpy, scikit-learn, PyTorch)</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Machine Learning &amp; Deep Learning</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Computer Vision / LSTM</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>SQL</span><span>82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Statistical Analysis / Data Mining</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>MATLAB / R / C++</span><span>72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Data Visualization</span><span>83%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="83"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Skills -->
+        <div class="skill-category reveal delay-1">
+          <div class="skill-cat-header">
+            <i class="fas fa-briefcase"></i>
+            <h3>Business Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Framing</span>
+            <span class="skill-tag">Data-Driven Decision Making</span>
+            <span class="skill-tag">Quantitative Research</span>
+            <span class="skill-tag">Trading Signal Development</span>
+            <span class="skill-tag">A/B Testing</span>
+            <span class="skill-tag">Reporting &amp; Storytelling</span>
+          </div>
+
+          <div class="skill-cat-header mt-lg">
+            <i class="fas fa-tools"></i>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-item"><i class="fab fa-python"></i><span>Jupyter</span></div>
+            <div class="tool-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            <div class="tool-item"><i class="fas fa-chart-bar"></i><span>Tableau</span></div>
+            <div class="tool-item"><i class="fas fa-chart-pie"></i><span>Power BI</span></div>
+            <div class="tool-item"><i class="fas fa-file-excel"></i><span>MS Office</span></div>
+            <div class="tool-item"><i class="fas fa-wind"></i><span>Wind</span></div>
+            <div class="tool-item"><i class="fas fa-file-alt"></i><span>LaTeX</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-city"></i></div>
+            <div class="project-meta">
+              <span class="project-period"><i class="fas fa-calendar-alt"></i> Jan 2026 – May 2026</span>
+              <span class="project-type"><i class="fas fa-users"></i> Group Project (MSc)</span>
+            </div>
+          </div>
+          <h3 class="project-title">Smart City Surveillance Video Analysis System</h3>
+          <p class="project-brief">
+            Intelligent monitoring system to analyze urban surveillance videos — detecting abnormal events
+            and providing traffic statistics to improve city safety and efficiency.
+          </p>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4><i class="fas fa-database"></i> Data</h4>
+              <p>VIRAT public dataset — multiple outdoor scenes with annotated pedestrian and vehicle activities.</p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-cogs"></i> Approach</h4>
+              <p>
+                Background subtraction with multi-period background models for low-light conditions;
+                integrated optical flow (TV-L1, CLG) and YOLO for motion estimation and real-time
+                object detection; designed event detection logic for anomaly recognition.
+              </p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-trophy"></i> Outcome</h4>
+              <p>
+                Detection accuracy <strong>mAP@0.5 &gt; 0.85</strong>; reduced false positives;
+                generated hourly traffic flow curves and group size histograms, enhancing
+                interpretability for city planners.
+              </p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-user-check"></i> My Contribution</h4>
+              <p>
+                Video preprocessing, background modeling, motion analysis, traffic statistics
+                visualization, and validation of event detection.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span>Python</span><span>YOLO</span><span>OpenCV</span>
+            <span>Optical Flow</span><span>Computer Vision</span>
+          </div>
+
+          <button class="btn-expand" aria-expanded="false">
+            <span class="expand-text">Show Details</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal delay-1">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-meta">
+              <span class="project-period"><i class="fas fa-calendar-alt"></i> Dec 2022 – Jun 2023</span>
+              <span class="project-type"><i class="fas fa-user"></i> Individual (BSc Thesis)</span>
+            </div>
+          </div>
+          <h3 class="project-title">Stock Price Prediction using LSTM</h3>
+          <p class="project-brief">
+            Deep learning model to predict future stock prices from historical data, addressing
+            non-linear temporal relationships in financial time series.
+          </p>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4><i class="fas fa-database"></i> Data</h4>
+              <p>Historical daily stock price data (open, high, low, close, volume) from Yahoo Finance — 5+ years of data.</p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-cogs"></i> Approach</h4>
+              <p>
+                Built an LSTM (Long Short-Term Memory) neural network; performed data normalization,
+                sequence generation, and hyperparameter tuning; evaluated using RMSE and MAE.
+              </p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-trophy"></i> Outcome</h4>
+              <p>
+                LSTM outperformed baseline linear models — <strong>RMSE significantly lower than ARIMA</strong>;
+                demonstrated model stability via cross-validation.
+              </p>
+            </div>
+            <div class="detail-block">
+              <h4><i class="fas fa-user-check"></i> My Contribution</h4>
+              <p>
+                Independently completed the entire pipeline — data collection, preprocessing,
+                model design, training, evaluation, and result interpretation.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span>Python</span><span>PyTorch</span><span>LSTM</span>
+            <span>Time Series</span><span>Financial Data</span>
+          </div>
+
+          <button class="btn-expand" aria-expanded="false">
+            <span class="expand-text">Show Details</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME SECTION ===== -->
+  <section class="section section-alt" id="resume">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My CV</span>
+        <h2 class="section-title">Resume</h2>
+      </div>
+      <div class="resume-wrapper reveal">
+        <div class="resume-card">
+          <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="resume-text">
+            <h3>Nan Zhang – Resume</h3>
+            <p>Data Science &amp; Quantitative Research | MSc Student @ Lingnan University</p>
+          </div>
+          <!-- TODO: Replace "#" with your Google Drive PDF share link -->
+          <a href="#" class="btn btn-primary" id="resume-download">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+        <p class="resume-note">
+          <i class="fas fa-info-circle"></i>
+          To update the resume link, upload your PDF to Google Drive, set sharing to "Anyone with the link",
+          and replace the <code>#</code> in <code>index.html</code> (line with <code>id="resume-download"</code>)
+          with the direct link.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Say Hello</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          I'm actively seeking opportunities in data science and quantitative research.
+          Feel free to reach out — I'd love to connect!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:zhangnan9236@gmail.com">zhangnan9236@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+86 18127062171 / +852 63902372</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/okitaokitaokita" target="_blank" rel="noopener noreferrer">
+                github.com/okitaokitaokita
+              </a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <!-- TODO: Replace "#" with your LinkedIn profile URL -->
+              <a href="#" id="linkedin-link">Add LinkedIn URL</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper reveal delay-1">
+          <form class="contact-form" id="contact-form" action="mailto:zhangnan9236@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Nan, I'd like to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Nan Zhang. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://github.com/okitaokitaokita" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <!-- TODO: Replace "#" with your LinkedIn profile URL -->
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:zhangnan9236@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
